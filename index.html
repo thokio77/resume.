@@ -11,29 +11,28 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background: #f9f9f9;
+            background: #f0f4f8;
             overflow-x: hidden;
         }
         header {
-            background: #0d1117;
+            background: linear-gradient(135deg, #007acc, #003b73);
             color: #ffffff;
             text-align: center;
             padding: 4rem 2rem;
-            position: relative;
         }
         header h1 {
             margin: 0;
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 700;
         }
         header p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             margin-top: 0.5rem;
         }
         nav {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
+            gap: 2rem;
             padding: 1rem;
             background: #ffffff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -42,13 +41,16 @@
             z-index: 10;
         }
         nav a {
-            color: #0d1117;
+            color: #007acc;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #007acc;
+            color: #003b73;
+        }
+        nav a.active {
+            color: #ff8c00;
         }
         section {
             margin: 2rem auto;
@@ -58,8 +60,11 @@
             border-radius: 12px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
+        section:nth-child(even) {
+            background: #f9f9f9;
+        }
         section h2 {
-            color: #0d1117;
+            color: #003b73;
             margin-bottom: 1rem;
             position: relative;
             padding-bottom: 0.5rem;
@@ -69,7 +74,7 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 50px;
+            width: 60px;
             height: 3px;
             background: #007acc;
         }
@@ -82,10 +87,9 @@
         }
         footer {
             text-align: center;
-            padding: 1.5rem;
-            background: #0d1117;
+            padding: 2rem;
+            background: linear-gradient(135deg, #003b73, #001e36);
             color: #ffffff;
-            margin-top: 2rem;
         }
         .project {
             display: flex;
@@ -94,9 +98,9 @@
         }
         .project-item {
             flex: 1 1 calc(50% - 1rem);
-            background: #f4f4f4;
+            background: #e8f4fa;
             border-radius: 8px;
-            padding: 1rem;
+            padding: 1.5rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
         }
@@ -168,29 +172,3 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <div class="project-item">
-                <h3>ALT Chrome Extension</h3>
-                <p>Developing a Chrome extension to humanize AI-generated content instantly.</p>
-            </div>
-            <div class="project-item">
-                <h3>SSL Certificate Validator</h3>
-                <p>Built a web extension to validate SSL certificates for secure browsing.</p>
-            </div>
-            <div class="project-item">
-                <h3>Database Optimization with Greedy Algorithms</h3>
-                <p>Implemented strategies to solve large datasets efficiently.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out via email or connect on LinkedIn!</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Ranga Hemanth. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
