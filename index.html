@@ -3,209 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ranga Hemanth - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <meta name="google-site-verification" content="google4085f603ce6b6862.html">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background: #f0f4f8;
-            overflow-x: hidden;
-        }
-        header {
-            background: linear-gradient(135deg, #007acc, #003b73);
-            color: #ffffff;
-            text-align: center;
-            padding: 4rem 2rem;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3.5rem;
-            font-weight: 700;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-top: 0.5rem;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            padding: 1rem;
-            background: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-        nav a {
-            color: #007acc;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #003b73;
-        }
-        nav a.active {
-            color: #ff8c00;
-        }
-        section {
-            margin: 2rem auto;
-            max-width: 900px;
-            background: #ffffff;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-        }
-        section:nth-child(even) {
-            background: #f9f9f9;
-        }
-        section h2 {
-            color: #003b73;
-            margin-bottom: 1rem;
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-        section h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: #007acc;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 0.5rem;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background: linear-gradient(135deg, #003b73, #001e36);
-            color: #ffffff;
-        }
-        .project {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
-        .project-item {
-            flex: 1 1 calc(50% - 1rem);
-            background: #e8f4fa;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .project-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-        .project-item h3 {
-            margin: 0 0 0.5rem;
-            font-size: 1.2rem;
-        }
-        @media (max-width: 768px) {
-            .project-item {
-                flex: 1 1 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
 </head>
 <body>
     <header>
-        <h1>Ranga Hemanth</h1>
-        <p>Email: [Your Email Address] | Phone: +33 7 45 46 51 08</p>
-        <p>LinkedIn: [Your LinkedIn URL] | Portfolio: [Your Portfolio URL]</p>
+        <a href="#" class="logo">Alex</a>
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="#" >Services</a>
+            <a href="#" >Skills</a>
+            <a href="#" >Education</a>
+            <a href="#" >Experience</a>
+            <a href="#" >Contact</a>
+        </nav>
     </header>
-
-    <nav>
-        <a href="#objective">Objective</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="objective">
-        <h2>Objective</h2>
-        <p>Graduate in Electronics and Communication Engineering with a Master's in Cybersecurity from EPITA (2026). Passionate about combining AI with security, and leveraging expertise in graphic design, photography, web development, and digital marketing to create innovative solutions in connected and secure environments.</p>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Master’s in Cybersecurity</strong>, EPITA, Paris, France (Graduation: 2026)</li>
-            <li><strong>Bachelor’s in Electronics and Communication Engineering</strong>, National Institute of Technology, Puducherry, India (Graduation: 2023)</li>
-        </ul>
-    </section>
-
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Programming & Web Development: HTML, CSS, JavaScript, Chrome Extension Development</li>
-            <li>Cybersecurity: SSL/TLS Certificate Validation, Public Key Infrastructure, Cryptography</li>
-            <li>AI Integration: AI-driven security solutions</li>
-            <li>Marketing Tools: Google Ads, SEO, Content Creation</li>
-            <li>Graphic Design & Editing: Adobe Photoshop, Lightroom, Canva</li>
-            <li>IoT Development: Internet of Things projects</li>
-            <li>Problem Solving: Greedy algorithms, data frame optimizations</li>
-        </ul>
-    </section>
-
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <ul>
-            <li><strong>Intern - VLSI Architectures for Digital Signal Processing:</strong> Gained hands-on experience in creating and analyzing efficient DSP architectures.</li>
-            <li><strong>Social Media Designer & Content Creator:</strong> Designed and managed digital marketing campaigns, improving social media engagement.</li>
-            <li><strong>Pizza Team Member:</strong> Collaborated with team members in a fast-paced environment to ensure excellent customer service.</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <div class="project-item">
-                <h3>Secure IoT Platform</h3>
-                <p>Developed a secure IoT framework integrating SSL/TLS for secure communication between devices, ensuring data integrity and privacy.</p>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Alex</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="project-item">
-                <h3>AI-Powered Malware Detection</h3>
-                <p>Built a machine learning model for malware detection, achieving 95% accuracy in identifying and mitigating potential threats.</p>
-            </div>
-            <div class="project-item">
-                <h3>Dynamic Chrome Extension</h3>
-                <p>Created a Chrome extension for dynamic content filtering and secure browsing, enhancing user productivity and security.</p>
-            </div>
-            <div class="project-item">
-                <h3>Social Media Analytics Dashboard</h3>
-                <p>Designed and implemented a dashboard to analyze social media performance, providing actionable insights for digital campaigns.</p>
-            </div>
+            <a href="#" class="btn">Hire me</a>
         </div>
     </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn:</p>
-        <ul>
-            <li><strong>Email:</strong> [Your Email Address]</li>
-            <li><strong>Phone:</strong> +33 7 45 46 51 08</li>
-            <li><strong>LinkedIn:</strong> <a href="[Your LinkedIn URL]" target="_blank">[Your LinkedIn Profile]</a></li>
-            <li><strong>Portfolio:</strong> <a href="[Your Portfolio URL]" target="_blank">[Your Portfolio URL]</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Ranga Hemanth. All rights reserved.</p>
-    </footer>
 </body>
 </html>
